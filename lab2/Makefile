@@ -12,4 +12,4 @@ vector:
 
 clean:
 	rm -rf *.o
-	rm bin
+	rm -rf bin
