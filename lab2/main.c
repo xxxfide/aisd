@@ -61,6 +61,8 @@ int main(){
 		}
 		if(expression[i]!= '/' &&  expression[i]!= '*' && expression[i]!='-' && expression[i]!='+' && !(isdigit(expression[i]))){
 			printf("Wrong input\n");
+			stack_delete(stack);
+			free(expression);
 			return 1;
 		}
 		stack_print(stack);
