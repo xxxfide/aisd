@@ -59,6 +59,10 @@ int main(){
 			stack_pop(stack,&data2);
 			stack_push(stack, data1 / data2);
 		}
+		if(expression[i]!= '/' &&  expression[i]!= '*' && expression[i]!='-' && expression[i]!='+' && !(isdigit(expression[i]))){
+			printf("Wrong input\n");
+			return 1;
+		}
 		stack_print(stack);
 	}
 	stack_pop(stack, &data1);
